@@ -2,6 +2,39 @@
   text-align: center;
 }
 
+.randomFooter{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.modal{
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+}
+
+.black-nav {
+  background: #000;
+  width: 100%;
+  display: flex;
+  color: #fff;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.list {
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +65,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
