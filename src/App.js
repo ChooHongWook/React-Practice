@@ -24,6 +24,7 @@ function App() {
     );
   }
 
+
   let [modal, modalSet] = useState(false);
   function modalSwitch(){
     if(modal === false){
@@ -32,11 +33,18 @@ function App() {
       modalSet(false);
     }
   }
+
+  const handleChange = (e) => {
+    titleSet(e.target.value);
+  };
+
   return (
     <div className="App">
       <div className="black-nav">
+        <div> {title}</div>
         <div>개발 Blog</div>
       </div>
+      <input type="text" value={title} onChange={handleChange}></input>
       <button onClick={postMixer}>제목 바꾸기</button>
       <div className="list">
         <h4> { post[0] } <span onClick={countClick}>🧡</span>{count}</h4>
@@ -51,7 +59,7 @@ function App() {
         // html 요소가 없을 때는 null을 사용한다!
       }
     </div>
-   );
+  );
 }
 
 function Modal(props) {
